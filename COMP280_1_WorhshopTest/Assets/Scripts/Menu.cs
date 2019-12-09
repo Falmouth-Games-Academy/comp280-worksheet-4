@@ -8,6 +8,8 @@ public class Menu : MonoBehaviour
     [SerializeField]
     GameObject menu;
 
+    bool pauseMenuOpen = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,5 +31,19 @@ public class Menu : MonoBehaviour
     public void Quit() 
     {
         UnityEditor.EditorApplication.isPlaying = false;
+    }
+
+    public void PauseMenu() 
+    {
+        if (pauseMenuOpen)
+        {
+            menu.SetActive(true);
+            pauseMenuOpen = false;
+        }
+        else if (!pauseMenuOpen)
+        {
+            menu.SetActive(false);
+            pauseMenuOpen = true;
+        }
     }
 }
