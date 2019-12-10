@@ -35,15 +35,6 @@ public class Menu : MonoBehaviour
 
     public void PauseMenu() 
     {
-        if (pauseMenuOpen)
-        {
-            menu.SetActive(true);
-            pauseMenuOpen = false;
-        }
-        else if (!pauseMenuOpen)
-        {
-            menu.SetActive(false);
-            pauseMenuOpen = true;
-        }
+        menu.SetActive(true);
     }
 }
