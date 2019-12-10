@@ -7,6 +7,8 @@ public class Menu : MonoBehaviour
 {
     [SerializeField]
     GameObject menu;
+    [SerializeField]
+    GameObject contorllerMenu;
 
     bool pauseMenuOpen = true;
 
@@ -14,6 +16,7 @@ public class Menu : MonoBehaviour
     void Start()
     {
         menu.SetActive(false);
+        contorllerMenu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -26,6 +29,7 @@ public class Menu : MonoBehaviour
     public void Resume() 
     {
         menu.SetActive(false);
+        contorllerMenu.SetActive(false);
     }
 
     public void Quit() 
@@ -36,5 +40,17 @@ public class Menu : MonoBehaviour
     public void PauseMenu() 
     {
         menu.SetActive(true);
+    }
+
+    public void Settings()
+    {
+        menu.SetActive(false);
+        contorllerMenu.SetActive(true);
+    }
+
+    public void ReturnToPauseMenu() 
+    {
+        menu.SetActive(true);
+        contorllerMenu.SetActive(false);
     }
 }
