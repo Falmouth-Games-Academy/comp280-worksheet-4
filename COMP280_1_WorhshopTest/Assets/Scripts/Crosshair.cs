@@ -32,6 +32,8 @@ public class Crosshair : MonoBehaviour
                     hit.transform.GetComponent<Enemy>().KillEnemy();
                 }
             }
+            else
+                image.color = new Color(1, 1, 1, 1);
         }
         else
             image.color = new Color(1, 1, 1, 1);
