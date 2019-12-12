@@ -9,8 +9,6 @@ public class Menu : MonoBehaviour
     GameObject menu;
     [SerializeField]
     GameObject contorllerMenu;
-    [SerializeField]
-    GameObject Player;
 
     bool pauseMenuOpen;
 
@@ -24,6 +22,7 @@ public class Menu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Open pause menu and freeze time
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             pauseMenuOpen = true;
@@ -31,6 +30,7 @@ public class Menu : MonoBehaviour
             Time.timeScale = 0;
         }
 
+        //Made the cursor visible and unlocking it out of place
         if (pauseMenuOpen)
         { 
             Cursor.visible = true;
@@ -38,6 +38,7 @@ public class Menu : MonoBehaviour
         }   
     }
 
+    //Unenable pause menu and unfreeze time
     public void Resume() 
     {
         menu.SetActive(false);
@@ -52,17 +53,20 @@ public class Menu : MonoBehaviour
         UnityEditor.EditorApplication.isPlaying = false;
     }
 
+    //Enable pause menu
     public void PauseMenu() 
     {
         menu.SetActive(true);
     }
 
+    //Enable pause menu and unenable controller menu
     public void Controls()
     {
         menu.SetActive(false);
         contorllerMenu.SetActive(true);
     }
 
+    //Unenable pause menu and enable controller menu
     public void ReturnToPauseMenu() 
     {
         menu.SetActive(true);
