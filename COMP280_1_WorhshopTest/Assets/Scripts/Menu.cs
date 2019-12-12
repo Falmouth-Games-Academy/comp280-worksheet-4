@@ -9,6 +9,8 @@ public class Menu : MonoBehaviour
     GameObject menu;
     [SerializeField]
     GameObject contorllerMenu;
+    [SerializeField]
+    GameObject Player;
 
     bool pauseMenuOpen = true;
 
@@ -40,6 +42,7 @@ public class Menu : MonoBehaviour
     public void PauseMenu() 
     {
         menu.SetActive(true);
+        Player.transform.rotation = Quaternion.Euler(Vector3.zero);
     }
 
     public void Settings()
