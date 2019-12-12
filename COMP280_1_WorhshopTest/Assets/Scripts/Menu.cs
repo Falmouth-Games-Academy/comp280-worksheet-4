@@ -12,7 +12,7 @@ public class Menu : MonoBehaviour
     [SerializeField]
     GameObject Player;
 
-    bool pauseMenuOpen = true;
+    bool pauseMenuOpen;
 
     // Start is called before the first frame update
     void Start()
@@ -24,14 +24,25 @@ public class Menu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            pauseMenuOpen = true;
             menu.SetActive(true);
+        }
+
+        if (pauseMenuOpen)
+        { 
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            Player.transform.eulerAngles = Vector3.zero;
+        }   
     }
 
     public void Resume() 
     {
         menu.SetActive(false);
         contorllerMenu.SetActive(false);
+        pauseMenuOpen = false;
     }
 
     public void Quit() 
@@ -42,10 +53,9 @@ public class Menu : MonoBehaviour
     public void PauseMenu() 
     {
         menu.SetActive(true);
-        Player.transform.rotation = Quaternion.Euler(Vector3.zero);
     }
 
-    public void Settings()
+    public void Controls()
     {
         menu.SetActive(false);
         contorllerMenu.SetActive(true);
