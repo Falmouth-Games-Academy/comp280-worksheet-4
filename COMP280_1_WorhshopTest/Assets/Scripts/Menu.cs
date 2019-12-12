@@ -28,13 +28,13 @@ public class Menu : MonoBehaviour
         {
             pauseMenuOpen = true;
             menu.SetActive(true);
+            Time.timeScale = 0;
         }
 
         if (pauseMenuOpen)
         { 
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
-            Player.transform.eulerAngles = Vector3.zero;
         }   
     }
 
@@ -43,8 +43,10 @@ public class Menu : MonoBehaviour
         menu.SetActive(false);
         contorllerMenu.SetActive(false);
         pauseMenuOpen = false;
+        Time.timeScale = 1;
     }
 
+    //Take player out of playmode
     public void Quit() 
     {
         UnityEditor.EditorApplication.isPlaying = false;

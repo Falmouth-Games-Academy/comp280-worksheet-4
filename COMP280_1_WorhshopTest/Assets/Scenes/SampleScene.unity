@@ -273,7 +273,7 @@ GameObject:
   - component: {fileID: 10683361}
   - component: {fileID: 10683360}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1442,7 +1442,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 260633149}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.94894207, y: 0.62411505, z: -8.823004}
+  m_LocalPosition: {x: 0.94894207, y: 0.5678485, z: -8.821343}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 534669905}
@@ -5341,7 +5341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 492451213}
   contorllerMenu: {fileID: 1722734604}
-  Player: {fileID: 0}
+  Player: {fileID: 534669902}
 --- !u!114 &1765290743
 MonoBehaviour:
   m_ObjectHideFlags: 0
