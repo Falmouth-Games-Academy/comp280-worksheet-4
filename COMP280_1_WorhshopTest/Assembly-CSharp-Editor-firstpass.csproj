@@ -60,19 +60,19 @@
      <Compile Include="Assets\Standard Assets\Editor\Water\Water4\WaterBaseEditor.cs" />
      <Compile Include="Assets\Standard Assets\Editor\Water\Water4\WaterEditorUtility.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/mo214885/Documents/comp280-worksheet-4/COMP280_1_WorhshopTest/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>D:/COMP280_1_1800868/comp280-worksheet-4/COMP280_1_WorhshopTest/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/mo214885/Documents/comp280-worksheet-4/COMP280_1_WorhshopTest/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>D:/COMP280_1_1800868/comp280-worksheet-4/COMP280_1_WorhshopTest/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/mo214885/Documents/comp280-worksheet-4/COMP280_1_WorhshopTest/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>D:/COMP280_1_1800868/comp280-worksheet-4/COMP280_1_WorhshopTest/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/mo214885/Documents/comp280-worksheet-4/COMP280_1_WorhshopTest/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>D:/COMP280_1_1800868/comp280-worksheet-4/COMP280_1_WorhshopTest/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>C:/Users/mo214885/Documents/comp280-worksheet-4/COMP280_1_WorhshopTest/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>D:/COMP280_1_1800868/comp280-worksheet-4/COMP280_1_WorhshopTest/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
