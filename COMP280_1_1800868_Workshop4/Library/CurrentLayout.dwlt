@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 77
+  controlID: 57
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 78
+  controlID: 58
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -210,8 +210,8 @@ MonoBehaviour:
     y: 0
     width: 1152
     height: 573
-  m_MinSize: {x: 204, y: 224}
-  m_MaxSize: {x: 4004, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 14}
@@ -266,8 +266,8 @@ MonoBehaviour:
     y: 0
     width: 389
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 74}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -382,23 +382,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 30370000
       m_LastClickedID: 0
-      m_ExpandedIDs: b2fbffff
+      m_ExpandedIDs: a2faffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Ground
-        m_OriginalName: Ground
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -1658
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -552,20 +552,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Standard Assets/Characters
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Standard Assets/Characters
+  - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\COMP280_1_1800868\comp280-worksheet-4\COMP280_1_WorhshopTest
+  m_LastProjectPath: C:\Users\mo214885\Documents\comp280-worksheet-4\COMP280_1_1800868_Workshop4
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c82e0000
-    m_LastClickedID: 11976
-    m_ExpandedIDs: 00000000ac280000062c00006237000042380000783e00007a3e00007c3e00007e3e0000803e000000ca9a3b
+    m_SelectedIDs: 0a340000
+    m_LastClickedID: 13322
+    m_ExpandedIDs: 000000000a34000010460000124600001446000016460000184600001a4600001c4600001e46000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -593,7 +593,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ac280000ee280000c82e000060390000783e00007a3e00007c3e00007e3e0000803e0000
+    m_ExpandedIDs: 000000000a34000010460000124600001446000016460000184600001a4600001c4600001e460000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
