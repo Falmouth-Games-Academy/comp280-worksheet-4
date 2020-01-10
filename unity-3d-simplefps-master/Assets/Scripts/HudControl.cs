@@ -44,20 +44,52 @@ public class HudControl : MonoBehaviour
         Player.PauseEvent += PauseMenu;
     }
 
+    private void Update()
+    {
+        Vector3 compassRot = module.Find("Compass").eulerAngles;
+        compassRot.z = GameObject.FindObjectOfType<Player>().transform.eulerAngles.y;
+        module.Find("Compass").eulerAngles = compassRot;
+
+        if (Cursor.visible == true)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
+        }
+    }
+
+    public void ContinueButton()
+    {
+        PauseMenu(false);
+    }
+
+    public void SettingsButton()
+    {
+        pauseMenu.SetActive(false);
+        transform.Find("Settings").gameObject.SetActive(true);
+    }
+
+    public void BackButton()
+    {
+        transform.Find("Settings").gameObject.SetActive(false);
+        pauseMenu.SetActive(true);
+    }
+
     private void PauseMenu(bool pause)
     {
         if (pause)
         {
             Time.timeScale = 0;
             muted.TransitionTo(0);
+            Cursor.visible = true;
         }
         else
         {
             Time.timeScale = 1;
             normal.TransitionTo(0);
+            Cursor.visible = false;
         }
         pauseMenu.SetActive(pause);
-        
+        module.gameObject.SetActive(!pause);
     }
 
     private void UpdatePlayerItems(string itemName)

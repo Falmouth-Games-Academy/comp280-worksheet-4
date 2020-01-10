@@ -99,7 +99,8 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             bool pause = Time.timeScale > 0 ? true : false;
-            PauseEvent(pause);
+            if(pause)
+                PauseEvent(pause);
         }
         #if UNITY_EDITOR || DEVELOPMENT_BUILD
         Bypass();
